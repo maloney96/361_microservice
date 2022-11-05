@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 
 // Checks Json Object for needed keys and returns them in repackaged json if found
 async function getSum(obj_url) {
@@ -19,4 +20,4 @@ async function getSum(obj_url) {
     return {image_url : image_url, wiki_url : wiki_url, description : description}
 };
 
-module.exports = { getSum }
+export default getSum; 
